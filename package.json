@@ -1,0 +1,48 @@
+{
+  "name": "float",
+  "author": "Justin Sunseri",
+  "version": "1.0.0",
+  "keywords": [
+    "pebble-watchface"
+  ],
+  "private": true,
+  "dependencies": {
+    "pebble-owm-weather": "^1.0.0"
+  },
+  "pebble": {
+    "displayName": "Float",
+    "uuid": "13d081cd-2f21-4ff7-9c01-9c41a14c18ef",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "messageKeys": [
+      "dummy"
+    ],
+    "capabilities": [
+      "health"
+    ],
+    "resources": {
+      "media": [
+        {
+          "characterRegex": "[:0-9 ]",
+          "type": "font",
+          "name": "DECIMAL_MEDIUM_42",
+          "file": "fonts/Justin-Decimal-Medium.ttf"
+        },
+        {
+          "characterRegex": "[:0-9,a-zA-Z° .]",
+          "type": "font",
+          "name": "DECIMAL_MEDIUM_16",
+          "file": "fonts/Justin-Decimal-Medium.ttf"
+        }
+      ]
+    }
+  }
+}
