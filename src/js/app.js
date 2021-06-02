@@ -1,11 +1,7 @@
-var OWMWeather = require('pebble-owm-weather');
-
-var owmWeather = new OWMWeather();
+var Clay = require('pebble-clay');
+var clayConfig = require('./config.json');
+var clay = new Clay(clayConfig);
 
 Pebble.addEventListener('ready', function (e) {
   console.log('PebbleKit JS ready!');
-});
-
-Pebble.addEventListener('appmessage', function (e) {
-  owmWeather.appMessageHandler(e);
 });

@@ -1,5 +1,5 @@
 {
-  "name": "float",
+  "name": "pebble-float",
   "author": "Justin Sunseri",
   "version": "1.0.0",
   "keywords": [
@@ -7,7 +7,8 @@
   ],
   "private": true,
   "dependencies": {
-    "pebble-owm-weather": "^1.0.0"
+    "pebble-clay": "^1.0.4",
+    "pebble-events": "^1.2.0"
   },
   "pebble": {
     "displayName": "Float",
@@ -16,24 +17,44 @@
     "enableMultiJS": true,
     "targetPlatforms": [
       "aplite",
-      "basalt",
-      "chalk"
+      "basalt"
     ],
     "watchapp": {
       "watchface": true
     },
-    "messageKeys": [
-      "dummy"
-    ],
     "capabilities": [
-      "health"
+      "health",
+      "configurable"
+    ],
+    "messageKeys": [
+      "dummy",
+      "TimeColor",
+      "DateColor",
+      "WeatherColor",
+      "BackgroundColor",
+      "HealthColor",
+      "IsTempMetricUnits",
+      "IsDistanceMetricUnits",
+      "IsHealthEnabled",
+      "IsWeatherEnabled",
+      "IsDateEnabled",
+      "IsBatteryEnabled",
+      "Request",
+      "Reply",
+      "TempK"
     ],
     "resources": {
       "media": [
         {
+          "characterRegex": "[0-9 ]",
+          "type": "font",
+          "name": "DECIMAL_MEDIUM_66",
+          "file": "fonts/Justin-Decimal-Medium.ttf"
+        },
+        {
           "characterRegex": "[:0-9 ]",
           "type": "font",
-          "name": "DECIMAL_MEDIUM_42",
+          "name": "DECIMAL_MEDIUM_32",
           "file": "fonts/Justin-Decimal-Medium.ttf"
         },
         {

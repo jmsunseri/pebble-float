@@ -1,0 +1,94 @@
+[
+  {
+    "type": "heading",
+    "defaultValue": "Float Configuration"
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Colors"
+      },
+      {
+        "type": "color",
+        "messageKey": "BackgroundColor",
+        "defaultValue": "0x000000",
+        "label": "Background"
+      },
+      {
+        "type": "color",
+        "messageKey": "TimeColor",
+        "defaultValue": "0xFFFFFF",
+        "label": "Time"
+      },
+      {
+        "type": "color",
+        "messageKey": "DateColor",
+        "defaultValue": "0xFFFFFF",
+        "label": "Date"
+      },
+      {
+        "type": "color",
+        "messageKey": "WeatherColor",
+        "defaultValue": "0xFFFFFF",
+        "label": "Weather"
+      },
+      {
+        "type": "color",
+        "messageKey": "HealthColor",
+        "defaultValue": "0xFFFFFF",
+        "label": "Steps & Distance"
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "More Settings"
+      },
+      {
+        "type": "toggle",
+        "messageKey": "IsHealthEnabled",
+        "label": "Enable Health?",
+        "defaultValue": true
+      },
+      {
+        "type": "toggle",
+        "messageKey": "IsDistanceMetricUnits",
+        "label": "Distance Metric?",
+        "defaultValue": false
+      },
+      {
+        "type": "toggle",
+        "messageKey": "IsWeatherEnabled",
+        "label": "Enable Weather?",
+        "defaultValue": true
+      },
+      {
+        "type": "toggle",
+        "messageKey": "IsTempMetricUnits",
+        "label": "Temperature Metric?",
+        "defaultValue": false
+      },
+      {
+        "type": "toggle",
+        "messageKey": "IsDateEnabled",
+        "label": "Enable Date?",
+        "defaultValue": true
+      },
+      {
+        "type": "toggle",
+        "messageKey": "IsBatteryEnabled",
+        "label": "Enable Battery Bar?",
+        "defaultValue": true
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "defaultValue": "Save Settings"
+  }
+]
